@@ -4,6 +4,11 @@
 This project is not finished, interaction not added yet!
 
 ![Foto](https://github.com/MirekSobota/todo-list-react/blob/main/public/work%20in%20progress.png)
+
+A simple task list has been developed during a programming course. 
+<strike>You can add tasks, mark them as done by clicking on the green button or remove them from the list by clicking on the red button.
+The 'Hide done tasks' and 'Finish all tasks' buttons will appear when you add any task.</strike>
+
 ## DEMO
 https://mireksobota.github.io/todo-list-react/
 
