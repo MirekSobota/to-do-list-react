@@ -1,9 +1,13 @@
 # Todo list
 
 ## Description
-Work in progress
+This project is not finished, interaction not added yet!
+
+![Foto](https://github.com/MirekSobota/todo-list-react/blob/main/public/work%20in%20progress.png)
 ## DEMO
 https://mireksobota.github.io/todo-list-react/
+
+![Task_list_demo](https://github.com/MirekSobota/todo-list-react/blob/main/public/Task_list_demo.gif)
 
 
 
