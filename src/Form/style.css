@@ -1,4 +1,4 @@
-.section__form {
+.form {
     FONT-WEIGHT: 100;
     padding: 19px;
     background-color: white;
@@ -7,14 +7,14 @@
     grid-column-gap: 15px;
 }
 
-.section__form--input {
+.form--input {
     padding: 10px;
     background-color: white;
     font-weight: 400;
     border: solid 1px grey;
 }
 
-.section__form--button {
+.form--button {
     padding: 10px;
     background-color: hsl(188, 98%, 26%);
     color: rgb(255 255 255);
@@ -23,27 +23,27 @@
     transition: 1s;
 }
 
-.section__form--button:hover {
+.form--button:hover {
     background-color: hsl(188, 50%, 26%);
     transform: scale(1.2);
 }
 
-.section__form--button:active {
+.form--button:active {
     background-color: hsl(188, 70%, 16%);
 }
 
 @media (max-width: 767px) {
-    .section__form {
+    .form {
         display: grid;
         grid-template-columns: 1fr;
         grid-row-gap: 15px;
     }
 
-    .section__form--input {
+    .form--input {
         grid-column: span 3;
     }
 
-    .section__form--button {
+    .form--button {
         grid-column: span 3;
     }
 }

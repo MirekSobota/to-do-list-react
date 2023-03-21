@@ -1,13 +1,13 @@
 import "./style.css";
 
 const Form = () => (
-  <form className="section__form ">
+  <form className="form ">
     <input
-      className="section__form--input "
+      className="form--input "
       name="name"
       placeholder="What need to be done?"
     />
-    <button className="section__form--button">Add task</button>
+    <button className="form--button">Add task</button>
   </form>
 );
 

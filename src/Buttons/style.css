@@ -1,80 +1,28 @@
-
-.section {
-    display: grid;
-    grid-gap: 5px;
-    margin-top: 10px;
-}
-
-.section__container {
-    background: white;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    
-}
-
-.section__tasks__buttons {
+.buttons {
     align-self: center;
 }
 
-.section__subHeader {
-    padding: 15px;
-    background-color: white;
-    margin: 0;
-    font-weight: 700;
-    font-size: large;
-}
-
-.section__subHeader__buttonHideDone {
+.buttons__button {
     background: none;
     border: none;
     color: hsl(188, 98%, 26%);
 }
 
-.section__subHeader__buttonHideDone:hover {
+.buttons__button:hover {
     color: hsl(188, 50%, 26%);
 }
 
-.section__subHeader__buttonFinishAll {
-    background: none;
-    border: none;
-    color: hsl(188, 98%, 26%);
-}
-
-.section__subHeader__buttonFinishAll:hover {
-    color: hsl(188, 50%, 26%);
-}
-
-.section__subHeader__buttonFinishAll:disabled {
+.buttons__button:disabled {
     color: hsl(0, 0%, 87%);
 }
 
-.buttonNoTasks {
-    display: none;
-}
-
 @media (max-width: 767px) {
-
-    .section__container {
-        background: white;
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .section__tasks__buttons {
+    .buttons {
         align-self: center;
         display: grid;
-
     }
 
-    .section__subHeader__buttonHideDone {
-        background: none;
-        border: none;
-        padding: 10px;
-        color: hsl(188, 98%, 26%);
-        align-self: center;
-    }
-
-    .section__subHeader__buttonFinishAll {
+    .buttons__button {
         background: none;
         border: none;
         padding: 10px;
