@@ -35,7 +35,7 @@ function App() {
   };
 
   const addNewTask = (newTaskContent) => {
-    if(newTaskContent) {
+    if (newTaskContent) {
       setTasks((tasks) => [
         ...tasks,
         {
@@ -45,7 +45,6 @@ function App() {
         },
       ]);
     }
-    
   };
 
   return (
