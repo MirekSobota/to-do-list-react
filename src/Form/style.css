@@ -7,14 +7,14 @@
     grid-column-gap: 15px;
 }
 
-.form--input {
+.form__input {
     padding: 10px;
     background-color: white;
     font-weight: 400;
     border: solid 1px grey;
 }
 
-.form--button {
+.form__button {
     padding: 10px;
     background-color: hsl(188, 98%, 26%);
     color: rgb(255 255 255);
@@ -23,12 +23,12 @@
     transition: 1s;
 }
 
-.form--button:hover {
+.form__button:hover {
     background-color: hsl(188, 50%, 26%);
     transform: scale(1.2);
 }
 
-.form--button:active {
+.form__button:active {
     background-color: hsl(188, 70%, 16%);
 }
 
@@ -39,11 +39,11 @@
         grid-row-gap: 15px;
     }
 
-    .form--input {
+    .form__input {
         grid-column: span 3;
     }
 
-    .form--button {
+    .form__button {
         grid-column: span 3;
     }
 }
