@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const Storage = ({ tasks, setTasks }) => {
+const Storage = ({ tasks }) => {
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
