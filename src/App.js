@@ -5,7 +5,7 @@ import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
 import { useState, useEffect } from "react";
-// import { Storage } from "./LocalStorage";
+
 
 const getInitialTasks = () => {
   const tasksFromLocalStorage = localStorage.getItem("tasks");
@@ -53,7 +53,6 @@ function App() {
 
   return (
     <Container>
-      {/* <Storage tasks={tasks} /> */}
       <Header title="Tasks list" />
       <Section title="Add new task" body={<Form addNewTask={addNewTask} />} />
 
