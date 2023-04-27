@@ -1,16 +1,16 @@
-.tasks {
+/* .tasks {
     padding: 26px;
     background-color: white;
-}
+} */
 
-.tasks__list {
+/* .tasks__list {
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-gap: 10px;
     align-items: center;
     border-bottom: 1px solid #ddd;
     padding: 10px;
-}
+} */
 
 .tasks__button {
     border: none;

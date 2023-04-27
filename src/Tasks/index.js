@@ -1,13 +1,12 @@
 import "./style.css";
+import { List, Item, Button } from "./syled";
 
 const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
-  <ul className="tasks ">
+  <List>
     {tasks.map((task) => (
-      <li
+      <Item
         key={task.id}
-        className={`tasks__list ${
-          task.done && hideDone ? "tasks__list--hidden" : ""
-        }`}
+        hidded={task.done && hideDone}
       >
         <button
           onClick={() => toggleTaskDone(task.id)}
@@ -24,9 +23,9 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
         >
           🗑
         </button>
-      </li>
+      </Item>
     ))}
-  </ul>
+  </List>
 );
 
 export default Tasks;
