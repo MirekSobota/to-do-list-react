@@ -1,5 +1,4 @@
-import "./style.css";
-import { List, Item, Button } from "./syled";
+import { List, Item, Content, Button } from "./syled";
 
 const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
   <List>
@@ -8,21 +7,21 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
         key={task.id}
         hidded={task.done && hideDone}
       >
-        <button
+        <Button
           onClick={() => toggleTaskDone(task.id)}
-          className="tasks__button tasks__button--doneTask "
+          toggleDone
         >
           {task.done ? "✔" : ""}
-        </button>
-        <span className={`${task.done ? "tasks__done" : ""}`}>
+        </Button>
+        <Content done={task.done}>
           {task.content}
-        </span>
-        <button
+        </Content>
+        <Button
           onClick={() => removeTask(task.id)}
-          className="tasks__button tasks__button--removeTask"
+          remove
         >
           🗑
-        </button>
+        </Button>
       </Item>
     ))}
   </List>
