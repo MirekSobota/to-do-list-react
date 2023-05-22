@@ -1,20 +1,20 @@
-.buttons {
+/* .buttons {
     align-self: center;
-}
+} */
 
-.buttons__button {
+/* .buttons__button {
     background: none;
     border: none;
     color: hsl(188, 98%, 26%);
-}
+} */
 
 .buttons__button:hover {
     color: hsl(188, 50%, 26%);
 }
 
-.buttons__button:disabled {
+/* .buttons__button:disabled {
     color: hsl(0, 0%, 87%);
-}
+} */
 
 @media (max-width: 767px) {
     .buttons {
