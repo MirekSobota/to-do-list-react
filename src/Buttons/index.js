@@ -1,4 +1,4 @@
-import "./style.css";
+
 import { Functions__Buttons, Button } from "./styled";
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) =>
   tasks.length > 0 && (
@@ -9,7 +9,6 @@ const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) =>
       </Button>
       <Button
         onClick={setAllDone}
-        
         disabled={tasks.every(({ done }) => done)}
       >
         Finish all tasks

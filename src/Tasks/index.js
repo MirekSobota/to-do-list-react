@@ -5,7 +5,7 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
     {tasks.map((task) => (
       <Item
         key={task.id}
-        hidded={task.done && hideDone}
+        hidden={task.done && hideDone}
       >
         <Button
           onClick={() => toggleTaskDone(task.id)}
