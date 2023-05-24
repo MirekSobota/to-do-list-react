@@ -9,7 +9,6 @@ export const FormContent = styled.form`
   grid-column-gap: 15px;
 
   @media (max-width: 767px) {
-    display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 15px;
   }

@@ -4,6 +4,10 @@ export const Content = styled.section`
   display: grid;
   grid-gap: 5px;
   margin-top: 10px;
+
+  @media (max-width: 767px) {
+    text-align: center;
+  }
 `;
 
 export const SectionContainer = styled.div`
@@ -13,7 +17,6 @@ export const SectionContainer = styled.div`
 
   @media (max-width: 767px) {
     background: white;
-    display: grid;
     grid-template-columns: 1fr;
   }
 `;

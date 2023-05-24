@@ -18,14 +18,4 @@ export const Button = styled.button`
         color: hsl(188, 50%, 26%);
       }
     `}
-
-  @media (max-width: 767px) {
-    display: grid;
-    background: none;
-    /* justify-content:center; */
-    border: none;
-    padding: 10px;
-    color: hsl(188, 98%, 26%)
-   
-  }
 `;
