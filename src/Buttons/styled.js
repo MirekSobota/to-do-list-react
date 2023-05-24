@@ -2,6 +2,12 @@ import styled, { css } from "styled-components";
 
 export const Functions__Buttons = styled.div`
   align-self: center;
+  justify-self: end;
+
+  @media (max-width: 767px) {
+    justify-self: center;
+    padding: 5px;
+  }
 `;
 
 export const Button = styled.button`

@@ -13,7 +13,7 @@ export const Content = styled.section`
 export const SectionContainer = styled.div`
   background: white;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
 
   @media (max-width: 767px) {
     background: white;

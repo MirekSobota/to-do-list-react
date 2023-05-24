@@ -44,7 +44,7 @@ export const Button = styled.button`
         background-color: hsl(120, 40%, 25%);
         transform: scale(1.1);
 
-        @media (max-width: 767px){
+        @media (max-width: 767px) {
           transform: scale(1);
           background-color: hsl(120, 100%, 25%);
         }
@@ -61,7 +61,7 @@ export const Button = styled.button`
         background-color: hsl(0, 40%, 50%);
         transform: scale(1.1);
 
-        @media (max-width: 767px){
+        @media (max-width: 767px) {
           transform: scale(1);
           background-color: hsl(120, 100%, 25%);
         }
