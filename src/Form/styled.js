@@ -8,7 +8,7 @@ export const FormContent = styled.form`
   grid-template-columns: 1fr auto;
   grid-column-gap: 15px;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     grid-template-columns: 1fr;
     grid-row-gap: 15px;
   }
@@ -16,33 +16,33 @@ export const FormContent = styled.form`
 
 export const Input = styled.input`
   padding: 10px;
-  background-color: white;
+  background: ${({ theme }) => theme.color.white};
   font-weight: 400;
   border: solid 1px grey;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     grid-column: span 3;
   }
 `;
 
 export const Button = styled.button`
   padding: 10px;
-  background-color: hsl(188, 98%, 26%);
-  color: rgb(255 255 255);
+  background: ${({ theme }) => theme.color.teal};
+  color: ${({ theme }) => theme.color.white};
   font-weight: 400;
   border: none;
   transition: 1s;
 
   &:hover {
-    background-color: hsl(188, 50%, 26%);
+    background: ${({ theme }) => theme.color.blueDianne};
     transform: scale(1.2);
   }
 
   &:active {
-    background-color: hsl(188, 70%, 16%);
+    background: ${({ theme }) => theme.color.eden};
   }
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     grid-column: span 3;
   }
 `;

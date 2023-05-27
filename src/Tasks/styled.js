@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const List = styled.ul`
   padding: 26px;
-  background-color: white;
+  background: ${({ theme }) => theme.color.white};
 `;
 
 export const Item = styled.li`
@@ -37,16 +37,16 @@ export const Button = styled.button`
   ${({ toggleDone }) =>
     toggleDone &&
     css`
-      color: white;
-      background-color: hsl(120, 100%, 25%);
+      color: ${({ theme }) => theme.color.white};
+      background: ${({ theme }) => theme.color.japaneseLaurel};
 
       &:hover {
-        background-color: hsl(120, 40%, 25%);
+        background: ${({ theme }) => theme.color.everglade};
         transform: scale(1.1);
 
-        @media (max-width: 767px) {
+        @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
           transform: scale(1);
-          background-color: hsl(120, 100%, 25%);
+          background: ${({ theme }) => theme.color.everglade};
         }
       }
     `}
@@ -54,16 +54,16 @@ export const Button = styled.button`
   ${({ remove }) =>
     remove &&
     css`
-      color: white;
-      background-color: hsl(0, 100%, 50%);
+      color: ${({theme}) => theme.colors.white};
+      background: ${({theme}) => theme.color.red};
 
       &:hover {
-        background-color: hsl(0, 40%, 50%);
+        background: ${({theme}) => theme.color.chestnut};
         transform: scale(1.1);
 
-        @media (max-width: 767px) {
+        @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
           transform: scale(1);
-          background-color: hsl(120, 100%, 25%);
+          background: ${({theme}) => theme.color.japaneseLaurel};
         }
       }
     `}

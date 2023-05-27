@@ -4,7 +4,7 @@ export const Functions__Buttons = styled.div`
   align-self: center;
   justify-self: end;
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     justify-self: center;
     padding: 5px;
   }
@@ -13,15 +13,15 @@ export const Functions__Buttons = styled.div`
 export const Button = styled.button`
   background: none;
   border: none;
-  color: hsl(188, 98%, 26%);
+  color: ${({ theme }) => theme.color.teal};
 
   ${({ disabled }) =>
     disabled &&
     css`
-      color: hsl(0, 0%, 87%);
+      color: ${({ theme }) => theme.color.alto};
 
       $:hover {
-        color: hsl(188, 50%, 26%);
+        color: ${({ theme }) => theme.color.blueDianne};
       }
     `}
 `;

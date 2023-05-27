@@ -5,6 +5,8 @@ import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
 import { useState, useEffect } from "react";
+import { ThemeProvider } from "styled-components";
+import {theme} from "./Theme/theme";
 
 const getInitialTasks = () => {
   const tasksFromLocalStorage = localStorage.getItem("tasks");
@@ -51,7 +53,8 @@ function App() {
   };
 
   return (
-    <Container>
+<ThemeProvider theme={theme}>
+<Container>
       <Header title="Tasks list" />
       <Section title="Add new task" body={<Form addNewTask={addNewTask} />} />
 
@@ -75,6 +78,7 @@ function App() {
         }
       />
     </Container>
+</ThemeProvider>
   );
 }
 
