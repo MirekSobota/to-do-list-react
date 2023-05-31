@@ -3,21 +3,21 @@ import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
-import Container from "./Container";
-import { useState } from "react";
+import {Container} from "./Container/styled";
 import { ThemeProvider } from "styled-components";
-import { theme } from "./Theme/theme";
+import { theme } from "./theme";
 import { useTasks } from "./useTasks";
 
 function App() {
-  const [hideDone, setHideDone] = useState(false);
-
-  const toggleHideDone = () => {
-    setHideDone((hideDone) => !hideDone);
-  };
-
-  const { tasks, removeTask, toggleTaskDone, setAllDone, addNewTask } =
-    useTasks();
+  const {
+    tasks,
+    removeTask,
+    toggleTaskDone,
+    setAllDone,
+    addNewTask,
+    hideDone,
+    toggleHideDone,
+  } = useTasks();
 
   return (
     <ThemeProvider theme={theme}>
