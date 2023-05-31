@@ -9,6 +9,7 @@ export const theme = {
     everglade: "#265926",
     red: "#ff0000",
     chestnut: "#b34d4d",
+    grey: "#eeeeee",
   },
   breakpoints: {
     mobile: 767,
