@@ -33,38 +33,34 @@ export const Button = styled.button`
   width: 30px;
   height: 30px;
   transition: 0.6s;
+`;
 
-  ${({ toggleDone }) =>
-    toggleDone &&
-    css`
-      color: ${({ theme }) => theme.color.white};
+export const ToggleDoneButton = styled(Button)`
+  color: ${({ theme }) => theme.color.white};
+  background: ${({ theme }) => theme.color.japaneseLaurel};
+
+  &:hover {
+    background: ${({ theme }) => theme.color.everglade};
+    transform: scale(1.1);
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+      transform: scale(1);
+      background: ${({ theme }) => theme.color.everglade};
+    }
+  }
+`;
+
+export const RemoveTaskButton = styled(Button)`
+  color: ${({ theme }) => theme.color.white};
+  background: ${({ theme }) => theme.color.red};
+
+  &:hover {
+    background: ${({ theme }) => theme.color.chestnut};
+    transform: scale(1.1);
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+      transform: scale(1);
       background: ${({ theme }) => theme.color.japaneseLaurel};
-
-      &:hover {
-        background: ${({ theme }) => theme.color.everglade};
-        transform: scale(1.1);
-
-        @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-          transform: scale(1);
-          background: ${({ theme }) => theme.color.everglade};
-        }
-      }
-    `}
-
-  ${({ remove }) =>
-    remove &&
-    css`
-      color: ${({theme}) => theme.color.white};
-      background: ${({theme}) => theme.color.red};
-
-      &:hover {
-        background: ${({theme}) => theme.color.chestnut};
-        transform: scale(1.1);
-
-        @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
-          transform: scale(1);
-          background: ${({theme}) => theme.color.japaneseLaurel};
-        }
-      }
-    `}
+    }
+  }
 `;

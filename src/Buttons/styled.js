@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const Functions__Buttons = styled.div`
+export const StyledButtons = styled.div`
   align-self: center;
   justify-self: end;
 
