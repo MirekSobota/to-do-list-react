@@ -16,12 +16,14 @@ https://mireksobota.github.io/todo-list-react/
 ## Technologies
 - HTML
 - CSS 
+    - Styled-components
     - Grid
     - Flex
-    - BEM
     - Normalize
 - JavaScript - ES6 
     - React.js
+    - Redux
+        - Redux-toolkit
     - Node.js    
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
