@@ -1,4 +1,5 @@
 import { Content, SectionContainer, SubHeader } from "./styled";
+
 const Section = ({ title, body, extraHeaderContent }) => (
   <Content>
     <SectionContainer>
