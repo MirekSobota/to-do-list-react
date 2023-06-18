@@ -4,16 +4,12 @@ export const Content = styled.section`
   display: grid;
   grid-gap: 5px;
   margin-top: 10px;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
-    text-align: center;
-  }
 `;
 
 export const SectionContainer = styled.div`
   background: white;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     background: ${({ theme }) => theme.color.white};

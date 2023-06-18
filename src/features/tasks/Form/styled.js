@@ -44,5 +44,11 @@ export const Button = styled.button`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     grid-column: span 3;
+    
+    &:hover {
+    background: ${({ theme }) => theme.color.blueDianne};
+    transform: none;
+  }
+
   }
 `;
