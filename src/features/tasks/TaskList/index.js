@@ -7,10 +7,11 @@ import {
   ToggleDoneButton,
   RemoveTaskButton,
 } from "./styled";
-import { selectTasks, toggleTaskDone, removeTask } from "../taskSlice";
+import { selectTasks, toggleTaskDone, removeTask, selectHideDone } from "../taskSlice";
 
 const TaskList = () => {
-  const { tasks, hideDone } = useSelector(selectTasks);
+  const  hideDone  = useSelector(selectHideDone);
+  const tasks = useSelector(selectTasks);
   const dispatch = useDispatch();
   return (
     <List>
