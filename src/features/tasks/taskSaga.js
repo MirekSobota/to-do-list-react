@@ -3,10 +3,13 @@ import { fetchExampleTasks, setTasks } from "./taskSlice";
 import { getExampleTasks } from "./getExampleTasks";
 
 
+
+
+
 function* watchFetchExampleTasksHandler() {
   console.log("Loading...")
     try {
-     yield delay(1000);
+     yield delay(500);
     const exampleTasks = yield call(getExampleTasks);
     yield put(setTasks(exampleTasks));
   } catch (error) {
