@@ -36,9 +36,12 @@ const tasksSLice = createSlice({
     fetchExampleTasksStatus: (state) => {
       state.loading = true;
       state.error = null;
-      state.showButton = false;
-
-      
+      state.showButton = false;      
+    },
+    fetchExampleTasksStatusDone: (state) => {
+      state.loading = false;
+      state.error = null;
+      state.showButton = true;
     },
     setError: (state, { payload: error }) => {
       state.loading = false;
@@ -57,6 +60,7 @@ export const {
   fetchExampleTasks,
   setTasks,
   fetchExampleTasksStatus,
+  fetchExampleTasksStatusDone,
   setError,
 } = tasksSLice.actions;
     
