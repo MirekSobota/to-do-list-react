@@ -5,7 +5,7 @@ import { fetchExampleTasks, selectTasksState } from "../taskSlice";
 
 const ExampleTasksButton = () => {
   const dispatch = useDispatch();
-  const { loading, showButton } = useSelector(selectTasksState);
+  const { loading, showButton, error } = useSelector(selectTasksState);
 
   const handleClick = () => {
     if (!loading) {
@@ -20,6 +20,9 @@ const ExampleTasksButton = () => {
       )}
       {loading && (
         <Button disabled>Loading...</Button>
+      )}
+      {error && (
+        <Button >Error! Can't load example tasks!</Button>
       )}
     </StyledButtons>
   );

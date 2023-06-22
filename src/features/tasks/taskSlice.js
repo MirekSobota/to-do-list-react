@@ -46,7 +46,7 @@ const tasksSLice = createSlice({
     setError: (state, { payload: error }) => {
       state.loading = false;
       state.error = error;
-      state.showButton = true;
+      state.showButton = false;
     },
   },
 });

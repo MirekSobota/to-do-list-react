@@ -12,8 +12,10 @@ function* watchFetchExampleTasksHandler() {
     yield put(setTasks(exampleTasks));
     yield put(fetchExampleTasksStatusDone());
   } catch (error) {
-    yield call(alert, "Something went wrong!");
     yield put(setError(error.message));
+    (console.error("Something went wrong", error));
+    yield delay(3000);
+    yield put(fetchExampleTasksStatusDone());
   }
 }
 export function* watchFetchExampleTasks() {
