@@ -47,4 +47,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export { Form };

@@ -7,10 +7,15 @@ import {
   ToggleDoneButton,
   RemoveTaskButton,
 } from "./styled";
-import { selectTasks, toggleTaskDone, removeTask, selectHideDone } from "../taskSlice";
+import {
+  selectTasks,
+  toggleTaskDone,
+  removeTask,
+  selectHideDone,
+} from "../taskSlice";
 
 const TaskList = () => {
-  const  hideDone  = useSelector(selectHideDone);
+  const hideDone = useSelector(selectHideDone);
   const tasks = useSelector(selectTasks);
   const dispatch = useDispatch();
   return (
@@ -31,4 +36,4 @@ const TaskList = () => {
   );
 };
 
-export default TaskList;
+export { TaskList };

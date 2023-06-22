@@ -7,7 +7,6 @@ import {
   toggleHideDone,
   selectAreTaskEmpty,
   selectIsEveryTaskDone,
-  
 } from "../taskSlice";
 
 const Buttons = () => {
@@ -34,4 +33,4 @@ const Buttons = () => {
     </>
   );
 };
-export default Buttons;
+export { Buttons };

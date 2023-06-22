@@ -3,10 +3,11 @@ import ReactDOM from "react-dom/client";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { ThemeProvider } from "styled-components";
+
 import { GLobalStyle } from "./GlobalStyle";
 import { theme } from "./theme";
-import App from "./App";
-import store from "./store";
+import { App } from "./App";
+import { store } from "./store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

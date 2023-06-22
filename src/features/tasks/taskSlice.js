@@ -7,6 +7,7 @@ const tasksSLice = createSlice({
     hideDone: false,
     loading: false,
     error: null,
+    showButton: true,
   },
   reducers: {
     addTask: ({ tasks }, { payload: task }) => {
@@ -32,17 +33,17 @@ const tasksSLice = createSlice({
     setTasks: (state, { payload: tasks }) => {
       state.tasks = tasks;
     },
-    fetchExampleTasksStatus: ({loading},{error}) => {
-      loading = true;
-      error = null;
+    fetchExampleTasksStatus: (state) => {
+      state.loading = true;
+      state.error = null;
+      state.showButton = false;
+
+      
     },
-    setTasks: ({loading}, {payload: tasks}) => {
-      loading = false;
-      tasks = payload;
-    },
-    setError: ({loading}, {error}, {payload: error}) => {
-      loading = false;
-      error = payload;
+    setError: (state, { payload: error }) => {
+      state.loading = false;
+      state.error = error;
+      state.showButton = true;
     },
   },
 });
@@ -56,8 +57,12 @@ export const {
   fetchExampleTasks,
   setTasks,
   fetchExampleTasksStatus,
+  setError,
 } = tasksSLice.actions;
-const selectTasksState = (state) => state.tasks;
+    
+
+export const selectTasksState = (state) => state.tasks;
+
 
 export const selectTasks = (state) => selectTasksState(state).tasks;
 export const selectHideDone = (state) => selectTasksState(state).hideDone;

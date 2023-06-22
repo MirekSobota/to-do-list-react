@@ -1,5 +1,5 @@
-import Tasks from "./features/tasks/Tasks";
+import { Tasks } from "./features/tasks/Tasks";
 
 const App = () => <Tasks />;
 
-export default App;
+export { App };

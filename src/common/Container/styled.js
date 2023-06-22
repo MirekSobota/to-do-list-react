@@ -7,4 +7,4 @@ const Container = styled.main`
   padding: 10px;
 `;
 
-export default Container;
+export { Container };
