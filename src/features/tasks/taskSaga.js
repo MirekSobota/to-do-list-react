@@ -1,8 +1,21 @@
-import { throttle, call, put, delay } from "redux-saga/effects";
+import {
+  throttle,
+  call,
+  put,
+  delay,
+  takeEvery,
+  select,
+  takeLatest,
+} from "redux-saga/effects";
 
-import { fetchExampleTasks, setTasks } from "./taskSlice";
+import { fetchExampleTasks, selectTasks, setTasks } from "./taskSlice";
 import { getExampleTasks } from "./getExampleTasks";
-import { fetchExampleTasksStatus,fetchExampleTasksStatusDone, setError } from "./taskSlice";
+import {
+  fetchExampleTasksStatus,
+  fetchExampleTasksStatusDone,
+  setError,
+} from "./taskSlice";
+import { saveTasksInLocalStorage } from "./taskLocalStorage";
 
 function* watchFetchExampleTasksHandler() {
   try {
@@ -13,11 +26,17 @@ function* watchFetchExampleTasksHandler() {
     yield put(fetchExampleTasksStatusDone());
   } catch (error) {
     yield put(setError(error.message));
-    (console.error("Something went wrong", error));
+    console.error("Something went wrong", error);
     yield delay(3000);
     yield put(fetchExampleTasksStatusDone());
   }
 }
-export function* watchFetchExampleTasks() {
-  yield throttle(2000, fetchExampleTasks.type, watchFetchExampleTasksHandler);
+function* saveTasksInLocalStorageHandler() {
+  const tasks = yield select(selectTasks);
+  yield call(saveTasksInLocalStorage, tasks);
+}
+
+export function* taskSaga() {
+  yield takeLatest(fetchExampleTasks.type, watchFetchExampleTasksHandler);
+  yield takeEvery("*", saveTasksInLocalStorageHandler);
 }
