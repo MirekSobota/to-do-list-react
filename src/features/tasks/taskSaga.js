@@ -1,5 +1,4 @@
 import {
-  throttle,
   call,
   put,
   delay,

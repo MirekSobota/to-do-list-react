@@ -5,8 +5,13 @@
     "id": "ruRgFx6IJwL90m_FShAw5"
   },
   {
-    "content": "another example task",
+    "content": "example task",
     "done": false,
     "id": "SXY3s-b4-vA3LTVqxbL4i"
+  },
+  {
+    "content": "example task - done",
+    "done": true,
+    "id": "SXY3s-b4-vA3LTV5xbL4i"
   }
 ]
