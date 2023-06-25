@@ -7,7 +7,7 @@ export const Content = styled.section`
 `;
 
 export const SectionContainer = styled.div`
-  background: white;
+  background: ${({ theme }) => theme.color.white};
   display: grid;
   grid-template-columns: auto auto;
 

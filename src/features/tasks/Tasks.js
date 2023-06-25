@@ -6,7 +6,6 @@ import { Section } from "../../common/Section";
 import { Header } from "../../common/Header";
 import { Container } from "../../common/Container/styled";
 
-
 function Tasks() {
   return (
     <Container>

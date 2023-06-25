@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const FormContent = styled.form`
   font-weight: 100;
   padding: 19px;
-  background-color: white;
+  background: ${({ theme }) => theme.color.white};
   display: grid;
   grid-template-columns: 1fr auto;
   grid-column-gap: 15px;
