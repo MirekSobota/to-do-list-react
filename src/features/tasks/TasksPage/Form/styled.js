@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const FormContent = styled.form`
   font-weight: 100;
-  padding: 19px;
   background: ${({ theme }) => theme.color.white};
   display: grid;
   grid-template-columns: 1fr auto;
@@ -11,17 +10,6 @@ export const FormContent = styled.form`
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     grid-template-columns: 1fr;
     grid-row-gap: 15px;
-  }
-`;
-
-export const Input = styled.input`
-  padding: 10px;
-  background: ${({ theme }) => theme.color.white};
-  font-weight: 400;
-  border: solid 1px grey;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
-    grid-column: span 3;
   }
 `;
 

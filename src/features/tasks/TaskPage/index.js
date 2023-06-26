@@ -18,8 +18,8 @@ function TaskPage() {
           <>
             <strong>Taksk status:</strong>
             {task.done
-              ? "  Task has been completed 👍🏻"
-              : "  Task has not been completed 👎🏻"}
+              ? "  Task has been completed ✔"
+              : "  Task has not been completed ✖"}
           </>
         }
       />

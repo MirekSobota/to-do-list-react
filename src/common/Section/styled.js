@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Content = styled.section`
   margin-top: 10px;
   background: ${({ theme }) => theme.color.white};
-  padding: 10px;
+  padding: 15px;
 `;
 
 export const SectionContainer = styled.div`
