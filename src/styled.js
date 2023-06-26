@@ -28,5 +28,5 @@ export const Item = styled.li`
 export const Navigation = styled.nav`
   margin: auto;
   width: 100%;
-  max-width: 850px;
+  max-width: 830px;
 `;
