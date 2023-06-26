@@ -1,5 +1,6 @@
 # Todo list
 
+![Task_list](https://github.com/MirekSobota/todo-list-react/blob/fdb1b1f3be6c13cff29fd12566f05cfb4fe98579/public/share.png)
 ## Description
 
 A simple task list has been developed during a programming course. 
