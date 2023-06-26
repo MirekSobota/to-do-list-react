@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 export const StyledButtons = styled.div`
   align-self: center;
   justify-self: end;
+  
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     justify-self: center;

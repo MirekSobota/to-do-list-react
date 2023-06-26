@@ -33,6 +33,9 @@ export const Button = styled.button`
   width: 30px;
   height: 30px;
   transition: 0.6s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const ToggleDoneButton = styled(Button)`
