@@ -26,8 +26,7 @@ export const Item = styled.li`
 `;
 
 export const Navigation = styled.nav`
-  position: fixed;
-  top: 0;
-  left: 0;
+  margin: auto;
   width: 100%;
+  max-width: 850px;
 `;

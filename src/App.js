@@ -13,7 +13,7 @@ const App = () => (
             <StyledNavLink to="/tasks">Tasks</StyledNavLink>
           </Item>
           <Item>
-            <StyledNavLink to="/author">Author</StyledNavLink>
+            <StyledNavLink to="/author">About author</StyledNavLink>
           </Item>
         </List>
       </Navigation>
