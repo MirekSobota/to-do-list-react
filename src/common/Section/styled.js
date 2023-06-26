@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Content = styled.section`
-  display: grid;
-  grid-gap: 5px;
   margin-top: 10px;
+  background: ${({ theme }) => theme.color.white};
+  padding: 10px;
 `;
 
 export const SectionContainer = styled.div`
@@ -18,9 +18,9 @@ export const SectionContainer = styled.div`
 `;
 
 export const SubHeader = styled.div`
-  padding: 15px;
   background: ${({ theme }) => theme.color.white};
   margin: 0;
   font-weight: 700;
   font-size: large;
+  padding-bottom: 15px;
 `;

@@ -1,16 +1,16 @@
 [
   {
-    "content": "example task",
+    "content": "Example task",
     "done": false,
     "id": "ruRgFx6IJwL90m_FShAw5"
   },
   {
-    "content": "example task",
+    "content": "Example task",
     "done": false,
     "id": "SXY3s-b4-vA3LTVqxbL4i"
   },
   {
-    "content": "example task - done",
+    "content": "Example task - done",
     "done": true,
     "id": "SXY3s-b4-vA3LTV5xbL4i"
   }

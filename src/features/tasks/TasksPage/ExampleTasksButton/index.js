@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 
 import { StyledButtons, Button } from "../Buttons/styled";
-import { fetchExampleTasks, selectTasksState } from "../taskSlice";
+import { fetchExampleTasks, selectTasksState } from "../../taskSlice";
 
 const ExampleTasksButton = () => {
   const dispatch = useDispatch();
@@ -15,18 +15,11 @@ const ExampleTasksButton = () => {
 
   return (
     <StyledButtons>
-      {showButton && ( 
-        <Button onClick={handleClick}>Get example tasks</Button>
-      )}
-      {loading && (
-        <Button disabled>Loading...</Button>
-      )}
-      {error && (
-        <Button >Error! Can't load example tasks!</Button>
-      )}
+      {showButton && <Button onClick={handleClick}>Get example tasks</Button>}
+      {loading && <Button disabled>Loading...</Button>}
+      {error && <Button>Error! Can't load example tasks!</Button>}
     </StyledButtons>
   );
 };
-
 
 export { ExampleTasksButton };
