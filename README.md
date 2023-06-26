@@ -3,9 +3,8 @@
 ![Task_list](https://github.com/MirekSobota/todo-list-react/blob/fdb1b1f3be6c13cff29fd12566f05cfb4fe98579/public/share.png)
 ## Description
 
-A simple task list has been developed during a programming course. 
-You can add tasks, mark them as done by clicking on the green button or remove them from the list by clicking on the red button.
-The 'Hide done tasks' and 'Finish all tasks' buttons will appear when you add any task.
+Task list has been developed during a programming course and is made using React.js
+
 
 ## DEMO
 https://mireksobota.github.io/todo-list-react/
@@ -17,15 +16,21 @@ https://mireksobota.github.io/todo-list-react/
 ## Technologies
 - HTML
 - CSS 
-    - Styled-components
-    - Grid
-    - Flex
-    - Normalize
-- JavaScript - ES6 
-    - React.js
-    - Redux
-        - Redux-toolkit
-    - Node.js    
+- CSS-Grid
+- CSS-Flexbox
+- Media queries
+- JS/ES6+
+- React.js
+- React-redux
+- Redux-Saga
+- Styled-components
+    
+## What can you do with this app?
+
+This app simplifies task management by allowing you to add/remove tasks, mark them as done individually or all at once, hide completed tasks, view task details, fetch sample tasks, search for tasks, and automatically save task content and language preferences.
+
+## Navigating through this app:
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
