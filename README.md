@@ -22,20 +22,15 @@ https://mireksobota.github.io/todo-list-react/
     
 ## Navigating through this app: 🌍
 </br>
-</br>
 <i>This app simplifies task management by allowing you to add/remove tasks, mark them as done individually or all at once, hide completed tasks, view task details, fetch sample tasks, search for tasks, and automatically save task content.</i>
 
 ![Task_list_part_tasks](https://github.com/MirekSobota/todo-list-react/blob/8760f5e9f64fbfe78c3c7d8a3bce7d32520d3d47/public/TaskListPartTasks.gif)
 </br>
-</br>
 <i>This way you can see if there is an issue with fetch sample tasks.</i>
 ![Task_list_part_error](https://github.com/MirekSobota/todo-list-react/blob/8760f5e9f64fbfe78c3c7d8a3bce7d32520d3d47/public/TaskListPartError.gif)
 </br>
-</br>
 <i>About the author, you can find some information about me.</i> 😉
 ![Task_list_part_author](https://github.com/MirekSobota/todo-list-react/blob/8760f5e9f64fbfe78c3c7d8a3bce7d32520d3d47/public/TaskListPartAuthor.gif)
-
-</br>
 </br>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
