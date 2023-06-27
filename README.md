@@ -27,7 +27,7 @@ https://mireksobota.github.io/todo-list-react/
     
 ## What can you do with this app?
 
-This app simplifies task management by allowing you to add/remove tasks, mark them as done individually or all at once, hide completed tasks, view task details, fetch sample tasks, search for tasks, and automatically save task content and language preferences.
+This app simplifies task management by allowing you to add/remove tasks, mark them as done individually or all at once, hide completed tasks, view task details, fetch sample tasks, search for tasks, and automatically save task content.
 
 ## Navigating through this app:
 
