@@ -1,17 +1,12 @@
-# Todo list
+# Todo list ![React](https://github.com/MirekSobota/todo-list-react/blob/3d3461ff4eec73213ef2795a2263821c106b1760/public/logo512.png) 
 
 ![Task_list](https://github.com/MirekSobota/todo-list-react/blob/fdb1b1f3be6c13cff29fd12566f05cfb4fe98579/public/share.png)
 ## Description
 
 Task list has been developed during a programming course and is made using React.js
 
-
 ## DEMO
 https://mireksobota.github.io/todo-list-react/
-
-![Task_list_demo](https://github.com/MirekSobota/todo-list-react/blob/main/public/Task_list_demo.gif)
-
-
 
 ## Technologies
 - HTML
@@ -25,13 +20,23 @@ https://mireksobota.github.io/todo-list-react/
 - Redux-Saga
 - Styled-components
     
-## What can you do with this app?
+## Navigating through this app:
+
+![Task_list_part_tasks](https://github.com/MirekSobota/todo-list-react/blob/8760f5e9f64fbfe78c3c7d8a3bce7d32520d3d47/public/TaskListPartTasks.gif)
 
 This app simplifies task management by allowing you to add/remove tasks, mark them as done individually or all at once, hide completed tasks, view task details, fetch sample tasks, search for tasks, and automatically save task content.
 
-## Navigating through this app:
+![Task_list_part_error](https://github.com/MirekSobota/todo-list-react/blob/8760f5e9f64fbfe78c3c7d8a3bce7d32520d3d47/public/TaskListPartError.gif)
+
+This way you can see if there is an issue with fetch sample tasks.
+
+![Task_list_part_author](https://github.com/MirekSobota/todo-list-react/blob/8760f5e9f64fbfe78c3c7d8a3bce7d32520d3d47/public/TaskListPartAuthor.gif)
 
 
+About the author, you can find some information about me. 😉
+
+</br>
+</br>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
