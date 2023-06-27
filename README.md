@@ -1,14 +1,14 @@
-# Todo list ![React](https://github.com/MirekSobota/todo-list-react/blob/3d3461ff4eec73213ef2795a2263821c106b1760/public/logo512.png) 
+# Todo list ✍🏻
 
 ![Task_list](https://github.com/MirekSobota/todo-list-react/blob/fdb1b1f3be6c13cff29fd12566f05cfb4fe98579/public/share.png)
 ## Description
 
 Task list has been developed during a programming course and is made using React.js
 
-## DEMO
+## DEMO 💾
 https://mireksobota.github.io/todo-list-react/
 
-## Technologies
+## Technologies 🏭
 - HTML
 - CSS 
 - CSS-Grid
@@ -20,7 +20,7 @@ https://mireksobota.github.io/todo-list-react/
 - Redux-Saga
 - Styled-components
     
-## Navigating through this app:
+## Navigating through this app: 🌍
 
 ![Task_list_part_tasks](https://github.com/MirekSobota/todo-list-react/blob/8760f5e9f64fbfe78c3c7d8a3bce7d32520d3d47/public/TaskListPartTasks.gif)
 
