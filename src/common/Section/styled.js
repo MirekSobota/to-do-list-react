@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 export const Content = styled.section`
   margin-top: 10px;
-  background: ${({ theme }) => theme.color.white};
-  padding: 15px;
 `;
 
 export const SectionContainer = styled.div`
@@ -19,8 +17,12 @@ export const SectionContainer = styled.div`
 
 export const SubHeader = styled.div`
   background: ${({ theme }) => theme.color.white};
-  margin: 0;
   font-weight: 700;
   font-size: large;
-  padding-bottom: 15px;
+  padding: 15px;
+`;
+export const SubContent = styled.div`
+  margin-top: 3px;
+  background: ${({ theme }) => theme.color.white};
+  padding: 15px;
 `;
