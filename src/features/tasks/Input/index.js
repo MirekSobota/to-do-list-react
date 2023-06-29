@@ -10,5 +10,3 @@ export default styled.input`
     grid-column: span 3;
   }
 `;
-
-

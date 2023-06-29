@@ -23,6 +23,7 @@ const TaskList = () => {
   const hideDone = useSelector(selectHideDone);
   const tasks = useSelector((state) => selectTasksByQuery(state, query));
   const dispatch = useDispatch();
+  
   return (
     <List>
       {tasks.map((task) => (
