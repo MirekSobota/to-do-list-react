@@ -7,9 +7,10 @@ import { Header } from "../../../common/Header";
 import { Container } from "../../../common/Container/styled";
 import { Search } from "./Search";
 
-function TasksPage() {
+const TasksPage =() => {
+  
   return (
-    <Container>
+       <Container>
       <Header title="Tasks list" />
       <Section
         title="Add new task"

@@ -6,9 +6,10 @@ import { Header } from "../../../common/Header";
 import { Container } from "../../../common/Container/styled";
 import { getTaskById } from "../taskSlice";
 
-function TaskPage() {
+const TaskPage = () => {
   const { id } = useParams();
   const task = useSelector((state) => getTaskById(state, id));
+
   return (
     <Container>
       <Header title="Task details" />
@@ -16,7 +17,7 @@ function TaskPage() {
         title={task ? task.content : "A task was not found."}
         body={
           <>
-            <strong>Taksk status:</strong>
+            <strong>Task status:</strong>
             {task.done
               ? "  Task has been completed ✔"
               : "  Task has not been completed ✖"}
@@ -25,6 +26,6 @@ function TaskPage() {
       />
     </Container>
   );
-}
+};
 
 export { TaskPage };
