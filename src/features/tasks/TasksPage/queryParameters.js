@@ -1,11 +1,25 @@
 import { useLocation, useHistory } from "react-router-dom";
 
-const useQueryParameter = () => {
-  const history = useHistory();
+export const useQueryParameter = (key) => {
   const location = useLocation();
-  const query = new URLSearchParams(location.search).get(searchQueryParamName);
+  const searchParams = new URLSearchParams(location.search);
+  return searchParams.get(key);
 };
 
-const useReplaceQueryParameter = () => {};
+export const useReplaceQueryParameter = () => {
+  const location = useLocation();
+  const history = useHistory();
 
-export { useQueryParameter, useReplaceQueryParameter };
+  return ({ key, value }) => {
+    const searchParams = new URLSearchParams(location.search);
+
+    if (value === undefined) {
+      searchParams.delete(key);
+    } else {
+      searchParams.set(key, value);
+    }
+
+    const newSearch = searchParams.toString();
+    history.push(`${location.pathname}?${newSearch}`);
+  };
+};
