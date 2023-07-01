@@ -16,12 +16,14 @@ const TaskPage = () => {
       <Section
         title={task ? task.content : "A task was not found."}
         body={
-          <>
+          task && (
+            <>
             <strong>Task status:</strong>
             {task.done
               ? "  Task has been completed ✔"
               : "  Task has not been completed ✖"}
           </>
+          )
         }
       />
     </Container>
