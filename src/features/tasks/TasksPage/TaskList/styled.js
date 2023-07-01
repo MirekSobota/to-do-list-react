@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
 export const List = styled.ul`
   padding: 26px;
@@ -66,4 +67,9 @@ export const RemoveTaskButton = styled(Button)`
       background: ${({ theme }) => theme.color.japaneseLaurel};
     }
   }
+`;
+
+export const StyledLink = styled(Link)`
+  color: ${({ theme }) => theme.color.black};
+  text-decoration: none;
 `;

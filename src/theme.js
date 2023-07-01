@@ -10,6 +10,7 @@ export const theme = {
     red: "#ff0000",
     chestnut: "#b34d4d",
     grey: "#eeeeee",
+    black: "#060608",
   },
   breakpoints: {
     mobile: 767,

@@ -1,5 +1,3 @@
-import { useLocation, useHistory } from "react-router-dom";
-
 import Input from "../../Input";
 import { Wrapper } from "./styled";
 import { searchQueryParamName } from "../searchQueryParamName";
@@ -18,7 +16,6 @@ const Search = () => {
       value: target.value.trim() !== "" ? target.value : undefined,
     });
   };
-
 
   return (
     <Wrapper>
