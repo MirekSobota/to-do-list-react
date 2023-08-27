@@ -6,7 +6,7 @@
 Task list has been developed during a programming course and is made using React.js
 
 ## DEMO 💾
-https://mireksobota.github.io/todo-list-react/
+https://mireksobota.github.io/to-do-list-react/
 
 ## Technologies 🏭
 - HTML
